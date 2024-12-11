@@ -6,18 +6,14 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-
 import java.time.Duration;
 import java.util.List;
-
-
 import static Utilities.GWD.getDriver;
-import static org.openqa.selenium.devtools.v127.page.Page.navigate;
+
 
 public class HamburgerMenuSteps {
     DialogContent dc = new DialogContent();
