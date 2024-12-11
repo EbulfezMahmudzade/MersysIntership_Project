@@ -1,4 +1,4 @@
-package StepDefinitions;
+package Hooks;
 
 import Utilities.GWD;
 import io.cucumber.java.After;
