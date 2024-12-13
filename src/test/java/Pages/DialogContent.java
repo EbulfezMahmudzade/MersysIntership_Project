@@ -36,6 +36,18 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//button[.//span[text()='Messaging']]")
     public WebElement MessagingTab;
 
+    @FindBy(xpath = "//ms-layout-menu-button[@caption='NAV.GRADING.TITLE']")
+    public WebElement Grading;
+
+    @FindBy(xpath = "//div[@id='mat-tab-group-0-label-1']")
+    public WebElement StudentTranscripts;
+
+    @FindBy(xpath = "//div[@id='mat-tab-group-0-label-2']")
+    public WebElement TranscriptBySubject;
+
+    @FindBy(xpath = "//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base']")
+    public WebElement MainPage; //navigate back
+
 
     public void NavBar() {
         List<WebElement> navBarItems = GWD.getDriver().findElements(By.xpath("//nav//a"));
