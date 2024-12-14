@@ -33,5 +33,13 @@ public class GWD {
             driver.quit();
             driver=null;
         }
+
+    }
+    public static void Bekle(long saniye) {
+        try {
+            Thread.sleep(saniye * 1000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
     }
 }
