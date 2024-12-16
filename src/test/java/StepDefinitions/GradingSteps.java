@@ -18,15 +18,15 @@ public class GradingSteps {
     @Given("User should be able to click on grading")
     public void userShouldBeAbleToClickOnGrading()
     {
-        dc.myClick(dc.Grading);
+        dc.myClick(dc.Kgrading);
 
     }
 
     @When("The user should be able to click buttons on the grading page")
     public void theUserShouldBeAbleToClickButtonsOnTheGradingPage()
     {
-        dc.myClick(dc.StudentTranscripts);
-        dc.myClick(dc.TranscriptBySubject);
+        dc.myClick(dc.KstudentTranscripts);
+        dc.myClick(dc.KtranscriptBySubject);
 
 
     }
@@ -34,6 +34,6 @@ public class GradingSteps {
     @Then("The user should be able to navigate main page")
     public void theUserShouldBeAbleToNavigateMainPage()
     {
-        dc.myClick(dc.MainPage);
+        dc.myClick(dc.KmainPage);
     }
 }

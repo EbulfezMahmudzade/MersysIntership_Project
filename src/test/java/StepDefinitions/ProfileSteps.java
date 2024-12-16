@@ -16,8 +16,8 @@ public class ProfileSteps {
     @Given("User should be able to click profile setting button")
     public void userShouldBeAbleToClickProfileSettingButton()
     {
-        dc.myClick(dc.Profile);
-        dc.myClick(dc.SettingButton);
+        dc.myClick(dc.Kprofile);
+        dc.myClick(dc.KsettingButton);
 
 
     }
@@ -25,9 +25,9 @@ public class ProfileSteps {
     @When("User should be able to select profile theme")
     public void userShouldBeAbleToSelectProfileTheme()
     {
-        dc.myClick(dc.DefaultTheme);
-        wait(ExpectedConditions.visibilityOf(dc.PurpleTheme));
-        dc.myClick(dc.PurpleTheme);
+        dc.myClick(dc.KdefaultTheme);
+        wait(ExpectedConditions.visibilityOf(dc.KpurpleTheme));
+        dc.myClick(dc.KpurpleTheme);
 
 
     }
@@ -39,7 +39,7 @@ public class ProfileSteps {
     @Then("User should be click save button and display success message")
     public void userShouldBeClickSaveButtonAndDisplaySuccessMessage()
     {
-     dc.myClick(dc.SaveButton);
+     dc.myClick(dc.KsaveButton);
      dc.SuccessMsg();
 
 
