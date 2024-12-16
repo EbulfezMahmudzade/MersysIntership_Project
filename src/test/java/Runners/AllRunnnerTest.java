@@ -8,6 +8,6 @@ import io.cucumber.testng.CucumberOptions;
         glue = {"StepDefinitions"}
 )
 
-public class AllTestRunnner extends AbstractTestNGCucumberTests {
+public class AllRunnnerTest extends AbstractTestNGCucumberTests {
 
 }
