@@ -112,7 +112,7 @@ public class DialogContent extends ParentPage {
     public WebElement pdfbelge;
 
     @FindBy(xpath = "(//div[@id='end'])[3]")
-    public WebElement ındır;
+    public WebElement indir;
 
     @FindBy(css = "[formcontrolname='username']")
     public WebElement username;
