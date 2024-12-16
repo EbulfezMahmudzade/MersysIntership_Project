@@ -26,7 +26,7 @@ public class Us_017Steps {
 
     @Then("Downloads the document to the computer")
     public void downloadsTheDocumentToTheComputer() {
-        Assert.assertTrue(dc.ındır.isDisplayed());
+        Assert.assertTrue(dc.indir.isDisplayed());
         dc.myClick(dc.indir);
     }
 }
