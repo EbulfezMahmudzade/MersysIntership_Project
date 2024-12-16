@@ -1,9 +1,9 @@
 Feature: Hamburger Menu Messaging Functionality
 
  Background:
-   Given Navigate to Campus
-   When The user types username and password and click login button
-   Then The user verifies login successfully
+   Given Navigate to Campus Website
+   When The users types username and password and click login button
+   Then The users verifies login successfully
 
   Scenario: Manage messages.
 
@@ -29,9 +29,6 @@ Feature: Hamburger Menu Messaging Functionality
       Given Click on the messaging trash box from the hamburger menu
       When You should see a delete and undo icon
       Then  Messages deleted successfully
-
-
-
 
 
 
