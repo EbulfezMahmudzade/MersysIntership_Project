@@ -7,33 +7,23 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
 public class LoginSteps {
+
     DialogContent dialogContentElement =new DialogContent();
-    @Given("Navigate to Campus")
-    public void navigateToCampus() {
+    @Given("Navigate to Campus Website")
+    public void navigateToCampusWebSite() {
         GWD.getDriver().get("https://test.mersys.io/");
     }
 
-    @When("Enter username and password and click login button")
-    public void enterUsernameAndPasswordAndClickLoginButton() {
-        dialogContentElement.mySendKeys(dialogContentElement.username, "Student_9");
-        dialogContentElement.mySendKeys(dialogContentElement.password, "S12345");
-        dialogContentElement.myClick(dialogContentElement.loginButton);
-    }
 
-    @When("The user types username and password and click login button")
-    public void theUserTypesUsernameAndPasswordAndClickLoginButton() {
+    @When("The users types username and password and click login button")
+    public void theUsersTypesUsernameAndPasswordAndClickLoginButton() {
         dialogContentElement.mySendKeys(dialogContentElement.usernameInput, "Student_9");
         dialogContentElement.mySendKeys(dialogContentElement.passwordInput, "S12345");
         dialogContentElement.myClick(dialogContentElement.loginBtn);
     }
 
-    @Then("The user verifies login successfully")
-    public void theUserVerifiesLoginSuccessfully() {
-        dialogContentElement.verifyContainsText(dialogContentElement.loginControl, "Welcome");
-    }
-
-    @Then("User should login successfully")
-    public void userVerifiesLoginSuccessfully() {
+    @Then("The users verifies login successfully")
+    public void theUsersVerifiesLoginSuccessfully() {
         dialogContentElement.verifyContainsText(dialogContentElement.loginControl, "Welcome");
     }
 }

@@ -1,9 +1,11 @@
 Feature:Calendar Feature
 
   Background:
-    Given Navigate to Campus
-    When Enter username and password and click login button
+    Given Navigate to Campus Website
+    When The users types username and password and click login button
+    Then The users verifies login successfully
 
-    Scenario: play video
+
+  Scenario: play video
       Given navigate to calender
       When click to ended lesson
