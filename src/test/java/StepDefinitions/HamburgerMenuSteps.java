@@ -26,7 +26,7 @@ public class HamburgerMenuSteps {
     public void hamburgerMenuButtonShouldBeClickable()
     {
        // wait.until(ExpectedConditions.visibilityOf(dc.HamburgerMenu));
-        dc.myClick(dc.HamburgerMenu);
+        dc.myClick(dc.KhamburgerMenu);
 
 
 
@@ -36,14 +36,14 @@ public class HamburgerMenuSteps {
     @When("User should see messaging tab")
     public void userShouldSeeMessagingTab()
     {
-        wait.until(ExpectedConditions.elementToBeClickable(dc.MessagingTab));
-        dc.myClick(dc.MessagingTab);
+        wait.until(ExpectedConditions.elementToBeClickable(dc.KmessagingTab));
+        dc.myClick(dc.KmessagingTab);
     }
 
     @Then("User should be able to hover over the messages tab")
     public void userShouldBeAbleToHoverOverTheMessagesTab() throws InterruptedException {
-        wait.until(ExpectedConditions.visibilityOf(dc.MessagingTab));
-        aksiyonlar.moveToElement(dc.MessagingTab).build().perform();
+        wait.until(ExpectedConditions.visibilityOf(dc.KmessagingTab));
+        aksiyonlar.moveToElement(dc.KmessagingTab).build().perform();
 
         List<WebElement>MessagingElements=GWD.getDriver().findElements(By.xpath("//div[@id=\"cdk-overlay-12\"]//div[starts-with(@class, \"mat-mdc-menu-content ng-tns\")]/button"));
         for (int i = 0; i < MessagingElements.size(); i++)
