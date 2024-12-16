@@ -31,4 +31,8 @@ public class TopNov extends ParentPage{
 
     @FindBy(xpath = "//user-message-bell/button")
     public WebElement  newMessageIcon;
+
+    @FindBy(xpath = "(//button[starts-with(@class,'mat-mdc-button')])[4]")
+    public WebElement  assignmentsBtn;
+
 }

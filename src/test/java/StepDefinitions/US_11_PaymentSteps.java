@@ -9,7 +9,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import io.cucumber.datatable.DataTable;
 import org.testng.Assert;
 
-public class PaymentSteps {
+public class US_11_PaymentSteps {
     DialogContent dialogContentElement = new DialogContent();
     TopNov topNavElement = new TopNov();
 

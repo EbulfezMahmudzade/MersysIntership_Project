@@ -9,7 +9,7 @@ import org.testng.Assert;
 
 import java.io.File;
 
-public class ReportSteps {
+public class US_12_ReportSteps {
     DialogContent dialogContentElement=new DialogContent();
     TopNov topNavElement=new TopNov();
     String downloadDir = System.getProperty("user.home") + "/Downloads";
