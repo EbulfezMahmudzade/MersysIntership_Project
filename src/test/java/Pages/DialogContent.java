@@ -135,8 +135,13 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//button[.//span[text()='Messaging']]")
     public WebElement MessagingTab;
 
+    //Us_018
+
+    @FindBy(xpath = "(//span[@class='mat-mdc-button-persistent-ripple mdc-button__ripple'])[5]")
+    public WebElement assignments;
+
     @FindBy(xpath = " //div[@class='w-50-p']")
-    public WebElement gorevsayısı;
+    public WebElement gorevsayisi;
 
     // Kadriye
 

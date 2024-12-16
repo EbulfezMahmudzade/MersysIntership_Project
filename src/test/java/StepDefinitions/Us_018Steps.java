@@ -16,13 +16,13 @@ public class Us_018Steps {
 
     @Given("Click on assingnments from the hamburger menu")
     public void clickOnAssingnmentsFromTheHamburgerMenu() {
-        Assert.assertTrue(dc.assıgnments.isDisplayed());
-        dc.myClick(dc.assıgnments);
+        Assert.assertTrue(dc.assignments.isDisplayed());
+        dc.myClick(dc.assignments);
     }
 
     @When("Student should see the total number of assignments")
     public void studentShouldSeeTheTotalNumberOfAssignments() {
-        Action action= aksiyonlar.click(dc.gorevsayısı).build();
+        Action action= aksiyonlar.click(dc.gorevsayisi).build();
         action.perform();
 
 
@@ -30,8 +30,8 @@ public class Us_018Steps {
 
     @Then("Student must see all tasks")
     public void studentMustSeeAllTasks() {
-        dc.myClick(dc.assıgnments);
-        Action action= aksiyonlar.click(dc.assıgnments).build();
+        dc.myClick(dc.assignments);
+        Action action= aksiyonlar.click(dc.assignments).build();
         action.perform();
 
     }
