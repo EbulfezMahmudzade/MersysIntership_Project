@@ -31,4 +31,9 @@ public class LoginSteps {
     public void theUserVerifiesLoginSuccessfully() {
         dialogContentElement.verifyContainsText(dialogContentElement.loginControl, "Welcome");
     }
+
+    @Then("User should login successfully")
+    public void userVerifiesLoginSuccessfully() {
+        dialogContentElement.verifyContainsText(dialogContentElement.loginControl, "Welcome");
+    }
 }

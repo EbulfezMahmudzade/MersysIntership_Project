@@ -1,9 +1,9 @@
 Feature: Hamburger Menu Messaging Functionality
 
   Background:
-    Given Navigate to Mersys
-    When Enter username and password and click login button
-    Then User should login successfully
+    Given Navigate to Campus
+    When The user types username and password and click login button
+    Then The user verifies login successfully
 
     Scenario: Finance Page
       Given Going to more from the hamburger menu
