@@ -1,4 +1,4 @@
-Feature: Grading Functunality
+Feature: Grading Functionality
 
   Background:
     Given Navigate to Campus

@@ -3,11 +3,14 @@ package Pages;
 import Utilities.GWD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.testng.Assert;
+
 import java.util.List;
-import static Utilities.GWD.getDriver;
+
 
 
 public class DialogContent extends ParentPage {
@@ -48,6 +51,25 @@ public class DialogContent extends ParentPage {
     @FindBy(xpath = "//button[@class='mdc-icon-button mat-mdc-icon-button mat-unthemed mat-mdc-button-base']")
     public WebElement MainPage; //navigate back
 
+    @FindBy(xpath = "//button[@class='mat-mdc-menu-trigger user-button mdc-button mat-mdc-button mat-unthemed mat-mdc-button-base ng-star-inserted']")
+    public WebElement Profile;
+
+    @FindBy(xpath = "(//span[@class='mat-mdc-menu-item-text'])[4]")
+    public WebElement SettingButton;
+
+    @FindBy(id = "mat-select-3-panel")
+    public WebElement DefaultTheme;
+
+    @FindBy(xpath = "//mat-option[@value='purple-theme']")
+    public WebElement PurpleTheme;
+
+    @FindBy(xpath = "//ms-save-button[@class='ng-star-inserted']")
+    public WebElement SaveButton;
+
+    @FindBy(xpath = "//div[text()='Profile successfully upddated']")
+    public WebElement SuccessMessage;
+
+
 
     public void NavBar() {
         List<WebElement> navBarItems = GWD.getDriver().findElements(By.xpath("//nav//a"));
@@ -64,9 +86,14 @@ public class DialogContent extends ParentPage {
 
 
         }
-
-
     }
+    public void SuccessMsg()
+    {
+        WebElement successMessage = wait.until(ExpectedConditions.visibilityOf(SuccessMessage));
+        String actualMessage = successMessage.getText();
+        Assert.assertEquals("Profile successfully upddated!", actualMessage);
+    }
+
 
 
         }
