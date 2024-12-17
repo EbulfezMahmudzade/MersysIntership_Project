@@ -6,4 +6,5 @@ Feature: Search for Assignments
     Then The users verifies login successfully
 
   Scenario: Successful Searching in Assignments
-    When The user hovers over the Hamburger Menu and clicks on Assignments
+    When Navigate to the assignment select filter and search
+    Then from the drop-down sort menu select and verify show by course, type, date and chart
