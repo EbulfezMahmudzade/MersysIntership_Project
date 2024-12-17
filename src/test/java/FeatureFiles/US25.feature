@@ -5,7 +5,6 @@ Feature:Calendar Feature
     When The users types username and password and click login button
     Then The users verifies login successfully
 
-
   Scenario: play video
       Given navigate to calender
       When click to ended lesson

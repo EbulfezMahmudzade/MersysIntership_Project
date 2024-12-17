@@ -3,12 +3,10 @@ package Pages;
 import Utilities.GWD;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-
-import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.*;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.testng.Assert;
-
 import java.util.List;
 
 public class DialogContent extends ParentPage {
@@ -16,7 +14,7 @@ public class DialogContent extends ParentPage {
         PageFactory.initElements(GWD.getDriver(), this);
     }
 
-    // Yuksel
+    // US 11 - US 12
 
     @FindBy(css = "input[formcontrolname='username']")
     public WebElement usernameInput;
@@ -65,6 +63,80 @@ public class DialogContent extends ParentPage {
 
     @FindBy(xpath = "//div[text()='Payment is completed']")
     public WebElement paymentMsgControl;
+
+    // US 21 - US 22
+
+    @FindBy(css="[icon='file-import']> button")
+    public List<WebElement> fileImportIcon;
+
+    @FindBy(css = "[class='tox-edit-area__iframe']")
+    public WebElement notePad;
+
+    @FindBy(css = "[icon='paperclip']")
+    public WebElement attachButton;
+
+    @FindBy(xpath = "//*[text()='From Local']")
+    public WebElement fromLocal;
+
+    @FindBy(css = "[icon='save']")
+    public WebElement saveAsDraft;
+
+    @FindBy(css ="[class='mat-accordion']")
+    public WebElement successMessage;
+
+    @FindBy(xpath = "//*[text()='Submit']")
+    public WebElement submitBtn;
+
+    @FindBy(css = "[class='mdc-button mdc-button--outlined mat-mdc-outlined-button mat-accent mat-mdc-button-base'] > :nth-child(2)")
+    public WebElement yesBtn;
+
+    @FindBy(xpath = "//*[text()='Successfully submitted to review']")
+    public WebElement successSendMessagge;
+
+    @FindBy(css="[class='assignment ng-star-inserted']>div")
+    public  List<WebElement> rndmIconPlace;
+
+    @FindBy(css = "[class='mat-badge mdc-button mat-mdc-button mat-badge-accent mat-mdc-button-base mat-mdc-raised-button mdc-button--raised mat-basic mat-badge-above mat-badge-after mat-badge-small mat-badge-hidden ng-star-inserted']")
+    public WebElement newSubmission;
+
+    @FindBy(css = "[page='ASSIGNMENT']")
+    public WebElement assignment;
+
+    @FindBy(xpath = "(//mat-select[@role='combobox'])[1]")
+    public WebElement course;
+
+    @FindBy(xpath = "(//mat-select[@role='combobox'])[2]")
+    public WebElement status;
+
+    @FindBy(css = "[class='mat-pseudo-checkbox mat-mdc-option-pseudo-checkbox mat-pseudo-checkbox-full ng-star-inserted']")
+    public WebElement checkBox;
+
+    @FindBy(xpath = "(//mat-select[@role='combobox'])[3]")
+    public WebElement semester;
+
+    @FindBy(css = "[value='all']")
+    public WebElement all;
+
+    @FindBy(xpath = "//span[text()='Default View']")
+    public WebElement defaultView;
+
+    @FindBy(xpath = "//span[text()='Show by Course']")
+    public WebElement showbyCourse;
+
+    @FindBy(xpath = "//span[text()=' 11A-Mathematics ']")
+    public WebElement math;
+
+    @FindBy(xpath = "//span[text()='Show by Type']")
+    public WebElement showbyType;
+
+    @FindBy(xpath = "//span[text()=' Homework ']")
+    public WebElement homework;
+
+    @FindBy(xpath = "(//span[text()='Show by Date'])[1]")
+    public WebElement showbyDate;
+
+    @FindBy(xpath = "(//span[text()='Show by Chart'])[1]")
+    public WebElement showbyChart;
 
     // US_007
 
@@ -323,5 +395,4 @@ public class DialogContent extends ParentPage {
         String actualMessage = successMessage.getText();
         Assert.assertEquals("Profile successfully upddated!", actualMessage);
     }
-
 }

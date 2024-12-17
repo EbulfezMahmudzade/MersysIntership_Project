@@ -1,4 +1,4 @@
-Feature: Assignments File Upload
+Feature:Assignments File Upload
 
   Background:
     Given Navigate to Campus Website
@@ -6,4 +6,5 @@ Feature: Assignments File Upload
     Then The users verifies login successfully
 
   Scenario: Successful Assignment Upload
-    When The user hovers over the Hamburger Menu and clicks on Assignments
+    When Navigate to the assignment select filter and search
+    And Checking the transactions on the homework page
