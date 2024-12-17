@@ -6,7 +6,6 @@ Feature: Login Functionality
     When The users types username and password and click login button
     Then The users verifies login successfully
 
-
   Scenario: Login with valid username and password negative
 
     Given Navigate to Campus Website

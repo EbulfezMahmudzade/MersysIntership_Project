@@ -1,4 +1,4 @@
-Feature: Assignments File Upload
+Feature:Assignments File Upload
 
   Background:
     Given Navigate to Campus Website

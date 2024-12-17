@@ -1,4 +1,4 @@
-Feature: Search for Assignments
+Feature:Search for Assignments
 
   Background:
     Given Navigate to Campus Website

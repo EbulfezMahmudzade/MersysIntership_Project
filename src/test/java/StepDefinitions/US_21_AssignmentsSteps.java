@@ -95,7 +95,6 @@ public class US_21_AssignmentsSteps {
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(folderWay, null);
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
-
         robot.keyRelease(KeyEvent.VK_V);
         robot.keyRelease(KeyEvent.VK_CONTROL);
 
