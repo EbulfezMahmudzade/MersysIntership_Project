@@ -91,7 +91,7 @@ public class US_21_AssignmentsSteps {
         dialogContentElement.attachButton.click();
         dialogContentElement.fromLocal.click();
         Thread.sleep(2000);
-        StringSelection folderWay = new StringSelection("C:\\Users\\GÜNAY\\Documents\\@Test.txt");
+        StringSelection folderWay = new StringSelection("C:\\Users\\Yuksel\\Documents\\@Test.txt");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(folderWay, null);
         robot.keyPress(KeyEvent.VK_CONTROL);
         robot.keyPress(KeyEvent.VK_V);
